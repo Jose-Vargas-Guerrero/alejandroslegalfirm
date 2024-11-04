@@ -1,0 +1,85 @@
+---
+---
+
+
+
+<div class="heroContainer">
+    <div class="divFade">
+        <h1>Abogados y consultores</h1>
+        <h2>Destacamos por nuestra honestidad</h2>
+        <span class="verticalSpan">
+            <h3>Alejandros Legal Firm</h3>
+            <p>
+                Dejamos que nuestro trabajo hable por sí solo, reflejando nuestro compromiso con la excelencia y la transparencia en cada caso. Con años de experiencia y un enfoque personalizado, estamos aquí para brindarte soluciones legales confiables que marcan la diferencia.
+            </p>
+        </span>
+    </div>
+</div>
+
+
+<style>
+    .heroContainer{
+        height: 100vh;
+        max-width: 100vw;
+        background-image: url(/src/images/heroimage.jpg);
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 100px;
+        margin: 0;
+    }
+
+    .divFade{
+        height: 100%;
+        width: 100%;
+        background-color: rgba(8, 28, 21, 0.5);
+        padding: 0 2rem;
+        font-family: var(--font-family-cormorant);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .divFade > h1{
+        color: var(--white);
+        font-size: 5rem;
+        letter-spacing: 2px;
+        z-index: 3;
+        margin: 0 0 1.5rem 0;
+    }
+
+    .divFade > h2{
+        color: var(--white);
+        font-size: 2rem;
+    }
+
+    .verticalSpan{
+        z-index: 1;
+        position: absolute;
+        padding: 10rem 1.2rem;
+        right: 70px;
+        width: 510px;
+        height: 100%;
+        background-color: rgba(243, 157, 36, 0.6);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: start;
+    }
+
+    .verticalSpan > h3, p{
+        color: var(--white);
+    }
+
+    .verticalSpan > h3{
+        width: 100%;
+        font-size: 2.3rem;
+        margin-bottom: 1rem;
+        }
+
+    .verticalSpan > p {
+        font-size: 1.4rem;
+    }
+</style>
