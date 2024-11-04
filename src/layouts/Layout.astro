@@ -14,6 +14,14 @@ const { title } = Astro.props;
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
+		<!-- cormorant font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+		<!-- inter font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 		<title>{title}</title>
 	</head>
 	<body>
@@ -21,30 +29,19 @@ const { title } = Astro.props;
 	</body>
 </html>
 <style is:global>
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
+	
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
 	}
+
 	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
+		--black: #081c15;
+		--white: #fffffc;
+		--orange: #F39D24;
+		--font-family-cormorant: "Cormorant Garamond", serif;
+		--font-family-inter: "Inter Tight", serif;
 	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
-	}
+
 </style>
