@@ -1,0 +1,76 @@
+---
+
+---
+
+
+<div class="integrantesContainer">
+    <h2>Descubre a nuestro equipo de expertos.</h2>
+    <div class="cardContainer">
+        <a href="integrantes/Gonzales" class="card">
+            <img src="/images/integrante.jpg" alt="alala"/>
+            <strong>Alejandro González</strong>
+            <p>Abogado</p>
+        </a>
+        <a href="integrantes/Solorzano" class="card">
+            <img src="/images/integrante.jpg" alt="alala"/>
+            <strong>Marvin Alejandro</strong>
+            <p>Abogado</p>
+        </a>
+    </div>
+</div>
+
+
+<style>
+    .integrantesContainer{
+        padding: 5rem 0;
+        height: 100vh;
+        max-width: 100vw;
+    }
+
+    .integrantesContainer > h2{
+        text-align: center;
+        font-family: var(--font-family-cormorant);
+        font-size: 3rem;
+    }
+
+    .cardContainer{
+        height: 100%;
+        max-width: 100%;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card{
+        margin: 0 4rem;
+        height: auto;
+        width: 270px;
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        color: var(--black);
+        transition: box-shadow ease-in 0.2s;
+    }
+
+    .card:hover{
+        box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+        
+    }
+
+    .card > strong{
+        font-family: var(--font-family-inter);
+        margin: 0.6rem 0;
+        font-weight: normal;
+        font-size: 1.2rem;
+    }
+
+    .card > p{
+        font-family: var(--font-family-cormorant);
+        font-size: 1.2rem;
+        line-height: 16px;
+    }
+
+    
+</style>
