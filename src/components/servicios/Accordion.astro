@@ -1,0 +1,81 @@
+---
+interface Props {
+    number: number;
+    name: string;
+    description: string;
+    open?: string 
+}
+
+const { number,name,description,open} = Astro.props;
+---
+
+<div class="accordionContainer">
+    <div class="accordion">
+        <details {open}>
+            <summary>
+                <span class="number">{number}.</span>{name}<span class="plus">+</span>
+            </summary>
+            <div class="descripcion">
+                <p class="description">{description}</p>
+            </div>
+        </details>
+    </div>
+</div>
+
+<style>
+    .accordionContainer{
+        width: 50%;
+        border-bottom: 3px solid var(--orange);
+    }
+
+    .accordion{
+        width: 100%;
+        interpolate-size: allow-keyboards;
+        transition: all 2s;
+    }
+
+    .accordion > details {
+        width: 100%;
+    }
+
+   
+    /* accordion */
+    summary::marker{
+        content: "";
+    }
+
+   
+
+    summary{
+        width: 100%;
+        font-size: 3rem;
+        margin: 1rem 0;
+        font-family: var(--font-family-cormorant);
+        position: relative;
+        cursor: pointer;
+        font-weight: bold;
+        transition: all 1s ease-in;
+    }
+
+    .number{
+        font-family: var(--font-family-inter);
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin: 0 1rem 0 0;
+    }
+
+    .plus{
+        position: absolute;
+        right: 0px;
+    }
+
+    .descripcion{
+        padding: 1.2rem 0;
+    }
+
+    .descripcion > p {
+        font-family: var(--font-family-inter);
+        line-height: 25px;
+        font-size: 1.11rem;
+    }
+</style>
