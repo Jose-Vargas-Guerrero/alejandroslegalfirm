@@ -1,0 +1,63 @@
+---
+import Accordion from "./Accordion.astro"
+---
+
+
+
+<div class="serviciosContainer">
+    <h2>
+        Como firma legal comprometida, responsable y eficaz, te ofrecemos los siguientes servicios
+    </h2>
+   <Accordion number={1} name="Asesorías Legales"
+   open="open"
+   description="Brindamos asesoría especializada en todos los aspectos legales que afectan a las empresas, desde la constitución hasta la gestión contractual y cumplimiento normativo, garantizando la protección de tus intereses y el crecimiento sostenible de tu negocio."/>
+   <Accordion
+   number={2}
+   name="Derecho Laboral"
+   description="Ofrecemos asesoría en derecho laboral para ayudar a tu empresa a gestionar relaciones laborales de manera justa y conforme a la ley. Te acompañamos en todos los aspectos, desde la contratación y elaboración de políticas internas hasta la resolución de conflictos laborales, siempre con el objetivo de proteger los derechos de tus empleados y asegurar el cumplimiento normativo."
+   />
+   <Accordion
+   number={3}
+   name="Derecho Civil"
+   description="Proporcionamos asesoría integral en derecho civil para resolver conflictos y gestionar asuntos relacionados con obligaciones, contratos, propiedad y derechos civiles. Nos aseguramos de proteger tus intereses, ofreciendo soluciones efectivas y seguras que promuevan la estabilidad y el cumplimiento de tus derechos en cada etapa de tus procesos legales."
+   />
+   <Accordion
+   number={4}
+   name="Derecho Penal"
+   description="Brindamos asesoría y representación en derecho penal, velando por la protección de tus derechos en todas las etapas del proceso penal. Te acompañamos desde la investigación hasta el juicio, con un enfoque estratégico y comprometido en la defensa de tus intereses y la búsqueda de una resolución justa y favorable en casos complejos."
+   />
+   <Accordion
+   number={5}
+   name="Derecho Mercantil y de Contratos"
+   description="Ofrecemos asesoría especializada en derecho mercantil y de contratos, ayudando a tu empresa a estructurar y gestionar acuerdos comerciales sólidos y beneficiosos. Te apoyamos en la redacción, revisión y cumplimiento de contratos, asegurando que cada transacción respalde los objetivos de tu negocio y cumpla con las normativas legales, minimizando riesgos y fortaleciendo tus relaciones comerciales."
+   />
+   <Accordion
+   number={6}
+   name="Tramites Administrativos"
+   description="Asistimos a tu empresa en la gestión de trámites administrativos, facilitando la interacción con entidades gubernamentales y asegurando el cumplimiento de todos los requisitos legales. Nos encargamos de procesos como permisos, licencias y registros, optimizando tiempos y asegurando que cada trámite se realice de forma eficiente y conforme a la normativa vigente."
+   />
+</div>
+
+
+<style>
+
+    .serviciosContainer{
+        padding: 8rem 0;
+        height: auto;
+        max-width: 100vw;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .serviciosContainer > h2 {
+        font-family: var(--font-family-cormorant);
+        font-size: 2.5rem;
+        width: 60%;
+        text-align: center;
+        margin: 4rem;
+    }
+
+</style>
