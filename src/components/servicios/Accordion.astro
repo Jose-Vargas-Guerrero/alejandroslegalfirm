@@ -31,7 +31,6 @@ const { number,name,description,open} = Astro.props;
     .accordion{
         width: 100%;
         interpolate-size: allow-keyboards;
-        transition: all 2s;
     }
 
     .accordion > details {
@@ -54,7 +53,7 @@ const { number,name,description,open} = Astro.props;
         position: relative;
         cursor: pointer;
         font-weight: bold;
-        transition: all 1s ease-in;
+        transition: color 0.2s ease;
     }
 
     .number{
@@ -77,5 +76,9 @@ const { number,name,description,open} = Astro.props;
         font-family: var(--font-family-inter);
         line-height: 25px;
         font-size: 1.11rem;
+    }
+
+    summary:hover{
+        color: var(--orange);
     }
 </style>
