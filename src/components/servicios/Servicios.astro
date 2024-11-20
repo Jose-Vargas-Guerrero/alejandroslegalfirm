@@ -60,4 +60,38 @@ import Accordion from "./Accordion.astro"
         margin: 4rem;
     }
 
+    /* media querys */
+  /* Dispositivos móviles pequeños */
+  @media (max-width: 576px) {
+    .serviciosContainer{
+        padding: 4rem 1rem;
+    }
+
+    .serviciosContainer > h2 {
+        font-size: 2.4rem;
+        font-weight: bold;
+        width: 100%;
+        text-align: center;
+        margin: 4rem 0;
+    }
+
+  }
+
+    /* Dispositivos móviles grandes (como teléfonos más anchos) */
+    @media (min-width: 577px) and (max-width: 768px) {
+        .serviciosContainer{
+        padding: 4rem 1rem;
+    }
+
+    .serviciosContainer > h2 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        width: 100%;
+        text-align: center;
+        margin: 4rem 0;
+    }   
+    }
+
+    
+
 </style>
