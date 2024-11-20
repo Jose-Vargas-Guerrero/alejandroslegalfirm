@@ -1,85 +1,401 @@
----
----
-
-
-
 <div class="heroContainer">
-    <div class="divFade">
-        <h1>Abogados y consultores</h1>
-        <h2>Destacamos por nuestra honestidad</h2>
-        <span class="verticalSpan">
-            <h3>Alejandros Legal Firm</h3>
-            <p>
-                Dejamos que nuestro trabajo hable por sí solo, reflejando nuestro compromiso con la excelencia y la transparencia en cada caso. Con años de experiencia y un enfoque personalizado, estamos aquí para brindarte soluciones legales confiables que marcan la diferencia.
-            </p>
-        </span>
-    </div>
+  <div class="divFade">
+    <h1>Abogados y consultores</h1>
+    <h2>Destacamos por nuestra honestidad</h2>
+    <span class="verticalSpan">
+      <h3>Alejandros Legal Firm</h3>
+      <p>
+        Dejamos que nuestro trabajo hable por sí solo, reflejando nuestro
+        compromiso con la excelencia y la transparencia en cada caso. Con años
+        de experiencia y un enfoque personalizado, estamos aquí para brindarte
+        soluciones legales confiables que marcan la diferencia.
+      </p>
+    </span>
+  </div>
 </div>
 
-
 <style>
-    .heroContainer{
-        height: 100vh;
-        max-width: 100vw;
-        background-image: url(/images/heroimage.jpg);
-        background-size: cover;
-        background-position: center;
-        margin-bottom: 100px;
-        margin: 0;
+  .heroContainer {
+    height: 100vh;
+    max-width: 100vw;
+    background-image: url(/images/heroimage.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 100px;
+    margin: 0;
+  }
+
+  .divFade {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(8, 28, 21, 0.5);
+    padding: 0 2rem;
+    font-family: var(--font-family-cormorant);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .divFade > h1 {
+    color: var(--white);
+    font-size: 5rem;
+    letter-spacing: 2px;
+    z-index: 3;
+    margin: 0 0 1.5rem 0;
+  }
+
+  .divFade > h2 {
+    color: var(--white);
+    font-size: 2rem;
+  }
+
+  .verticalSpan {
+    z-index: 1;
+    position: absolute;
+    padding: 10rem 1.2rem;
+    right: 70px;
+    width: 510px;
+    height: 100%;
+    background-color: rgba(243, 157, 36, 0.6);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: start;
+  }
+
+  .verticalSpan > h3,
+  p {
+    color: var(--white);
+  }
+
+  .verticalSpan > h3 {
+    width: 100%;
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
+  }
+
+  .verticalSpan > p {
+    font-size: 1.4rem;
+  }
+
+  /* media querys */
+  /* Dispositivos móviles pequeños */
+  @media (max-width: 576px) {
+    .divFade {
+      height: 100%;
+      width: 100%;
+      background-color: rgba(8, 28, 21, 0.5);
+      padding: 30% 1rem;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: flex-start;
     }
 
-    .divFade{
-        height: 100%;
-        width: 100%;
-        background-color: rgba(8, 28, 21, 0.5);
-        padding: 0 2rem;
-        font-family: var(--font-family-cormorant);
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
+    .divFade > h1 {
+      font-size: 3rem;
+      margin: 0 0 1rem 0;
+      z-index: 3;
     }
 
-    .divFade > h1{
-        color: var(--white);
-        font-size: 5rem;
-        letter-spacing: 2px;
-        z-index: 3;
-        margin: 0 0 1.5rem 0;
+    .divFade > h2 {
+      z-index: 3;
+      color: var(--white);
+      font-size: 1.5rem;
     }
 
-    .divFade > h2{
-        color: var(--white);
-        font-size: 2rem;
+    .verticalSpan {
+      z-index: 1;
+      position: absolute;
+      right: 0px;
+      bottom: 0px;
+      width: 100%;
+      height: 50%;
+      background-color: rgba(243, 157, 36, 0.5);
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
     }
 
-    .verticalSpan{
-        z-index: 1;
-        position: absolute;
-        padding: 10rem 1.2rem;
-        right: 70px;
-        width: 510px;
-        height: 100%;
-        background-color: rgba(243, 157, 36, 0.6);
-
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: start;
+    .verticalSpan > h3 {
+      width: 100%;
+      font-size: 2rem;
+      margin-bottom: 1rem;
     }
-
-    .verticalSpan > h3, p{
-        color: var(--white);
-    }
-
-    .verticalSpan > h3{
-        width: 100%;
-        font-size: 2.3rem;
-        margin-bottom: 1rem;
-        }
 
     .verticalSpan > p {
-        font-size: 1.4rem;
+      font-size: 1.2rem;
     }
+  }
+
+    /* Dispositivos móviles grandes (como teléfonos más anchos) */
+    @media (min-width: 577px) and (max-width: 768px) {
+    .divFade {
+      height: 100%;
+      width: 100%;
+      background-color: rgba(8, 28, 21, 0.5);
+      padding: 30% 1rem;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: flex-start;
+    }
+
+    .divFade > h1 {
+      font-size: 3rem;
+      margin: 0 0 1rem 0;
+      z-index: 3;
+    }
+
+    .divFade > h2 {
+      z-index: 3;
+      color: var(--white);
+      font-size: 1.5rem;
+    }
+
+    .verticalSpan {
+      z-index: 1;
+      position: absolute;
+      right: 0px;
+      bottom: 0px;
+      width: 100%;
+      height: 50%;
+      background-color: rgba(243, 157, 36, 0.5);
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+    }
+
+    .verticalSpan > h3 {
+      width: 100%;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .verticalSpan > p {
+      font-size: 1.2rem;
+    }
+  }
+
+  @media (min-width: 577px) and (max-width: 768px) {
+    .divFade {
+      height: 100%;
+      width: 100%;
+      background-color: rgba(8, 28, 21, 0.5);
+      padding: 20% 1rem;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: flex-start;
+    }
+
+    .divFade > h1 {
+      font-size: 3.4rem;
+      margin: 0 0 1rem 0;
+      z-index: 3;
+    }
+
+    .divFade > h2 {
+      z-index: 3;
+      color: var(--white);
+      font-size: 1.8rem;
+    }
+
+    .verticalSpan {
+      z-index: 1;
+      position: absolute;
+      right: 0px;
+      bottom: 0px;
+      width: 100%;
+      height: 50%;
+      background-color: rgba(243, 157, 36, 0.5);
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+    }
+
+    .verticalSpan > h3 {
+      width: 100%;
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .verticalSpan > p {
+      font-size: 1.4rem;
+    }
+}
+
+/* Dispositivos grandes (laptops/desktops) */
+@media (min-width: 769px) and (max-width: 992px) {
+    .divFade {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(8, 28, 21, 0.5);
+    padding: 0 2rem;
+    font-family: var(--font-family-cormorant);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .divFade > h1 {
+    width: 50%;
+    color: var(--white);
+    font-size: 4rem;
+    letter-spacing: 2px;
+    z-index: 3;
+    margin: 0 0 1.5rem 0;   
+  }
+
+  .divFade > h2 {
+    color: var(--white);
+    font-size: 2rem;
+  }
+
+  .verticalSpan {
+    z-index: 1;
+    position: absolute;
+    padding: 10rem 1.2rem;
+    right: 0px;
+    width: 310px;
+    height: 100%;
+    background-color: rgba(243, 157, 36, 0.6);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: start;
+  }
+
+  .verticalSpan > h3 {
+    width: 100%;
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .verticalSpan > p {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+  .divFade {
+      height: 100%;
+      width: 100%;
+      background-color: rgba(8, 28, 21, 0.5);
+      padding: 20% 1rem;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: flex-start;
+    }
+
+    .divFade > h1 {
+      font-size: 3.4rem;
+      margin: 0 0 1rem 0;
+      z-index: 3;
+    }
+
+    .divFade > h2 {
+      z-index: 3;
+      color: var(--white);
+      font-size: 1.8rem;
+    }
+
+    .verticalSpan {
+      z-index: 1;
+      position: absolute;
+      right: 0px;
+      bottom: 0px;
+      width: 100%;
+      height: 50%;
+      background-color: rgba(243, 157, 36, 0.5);
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+    }
+
+    .verticalSpan > h3 {
+      width: 100%;
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .verticalSpan > p {
+      font-size: 1.4rem;
+    }
+}
+
+/* Dispositivos grandes (laptops/desktops) */
+@media (min-width: 994px) and (max-width: 1300px) {
+    .divFade {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(8, 28, 21, 0.5);
+    padding: 0 2rem;
+    font-family: var(--font-family-cormorant);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .divFade > h1 {
+    width: 50%;
+    color: var(--white);
+    font-size: 4rem;
+    letter-spacing: 2px;
+    z-index: 3;
+    margin: 0 0 1.5rem 0;   
+  }
+
+  .divFade > h2 {
+    color: var(--white);
+    font-size: 2rem;
+  }
+
+  .verticalSpan {
+    z-index: 1;
+    position: absolute;
+    padding: 10rem 1.2rem;
+    right: 30px;
+    width: 310px;
+    height: 100%;
+    background-color: rgba(243, 157, 36, 0.6);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: start;
+  }
+
+  .verticalSpan > h3 {
+    width: 100%;
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .verticalSpan > p {
+    font-size: 1.4rem;
+  }
+}
+
 </style>

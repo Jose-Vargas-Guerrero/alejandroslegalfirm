@@ -7,12 +7,12 @@
     <h2>Descubre a nuestro equipo de expertos.</h2>
     <div class="cardContainer">
         <a href="integrantes/Gonzales" class="card">
-            <img src="/images/integrante.jpg" alt="alala"/>
+            <img src="/images/integrante.jpg" alt="Equipo de abogados expertos en derechos"/>
             <strong>Alejandro González</strong>
             <p>Abogado</p>
         </a>
         <a href="integrantes/Solorzano" class="card">
-            <img src="/images/integrante.jpg" alt="alala"/>
+            <img src="/images/integrante.jpg" alt="Equipo de abogados expertos en derechos"/>
             <strong>Marvin Alejandro</strong>
             <p>Abogado</p>
         </a>
@@ -72,5 +72,95 @@
         line-height: 16px;
     }
 
+
+    /* media querys */
+    /* Dispositivos móviles pequeños */
+    @media (max-width: 576px) {
+        .integrantesContainer{
+        padding: 5rem 0;
+        height: auto;
+    }
+
+    .integrantesContainer > h2{
+        text-align: center;
+        font-size: 2.5rem;
+        margin: 0 0 2rem 0;
+    }
+
+    .cardContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card{
+        margin: 2rem 0;
+        height: auto;
+        width: 270px;
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        transition: box-shadow ease-in 0.2s;
+    }
+
+    .card > strong{
+        font-family: var(--font-family-inter);
+        margin: 0.6rem 0;
+        font-weight: normal;
+        font-size: 1.5rem;
+    }
+
+    .card > p{
+        font-family: var(--font-family-cormorant);
+        font-size: 1.4rem;
+        line-height: 16px;
+    }
+    }
+
+    /* Dispositivos móviles grandes (como teléfonos más anchos) */
+    @media (min-width: 577px) and (max-width: 768px) {
+        .integrantesContainer{
+        padding: 5rem 0;
+        height: auto;
+    }
+
+    .integrantesContainer > h2{
+        text-align: center; 
+        font-size: 2.5rem;
+        width: 70%;
+        margin:auto;
+    }
+
+    .cardContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card{
+        margin: 2rem 0;
+        height: auto;
+        width: 270px;
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        transition: box-shadow ease-in 0.2s;
+    }
+
+    .card > strong{
+        font-family: var(--font-family-inter);
+        margin: 0.6rem 0;
+        font-weight: normal;
+        font-size: 1.5rem;
+    }
+
+    .card > p{
+        font-family: var(--font-family-cormorant);
+        font-size: 1.4rem;
+        line-height: 16px;
+    }
+    }
     
 </style>
