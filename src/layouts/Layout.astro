@@ -7,13 +7,16 @@ const { title } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="es-es">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image" href="images/logoalejandroslegalfirm.jpg" />
 		<meta name="generator" content={Astro.generator} />
+		<meta name="description" content="En Alejandros LegalFirm ofrecemos asesoría legal confiable en derecho corporativo, familiar, penal y más. Contáctanos para resolver tus problemas legales con expertos.">
+		<meta name="keywords" content="bufete de abogados, asesoría legal, derecho corporativo, derecho penal, derecho familiar, abogados expertos, Alejandros LegalFirm, firma legal, servicios legales, abogados confiables">
+		<meta name="author" content="Alejandros LegalFirm">
 		<!-- cormorant font -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,6 +29,9 @@ const { title } = Astro.props;
 	</head>
 	<body>
 		<slot />
+		<footer>
+			Copyright © 2024 Alejandros Legal Firm, P.C. All rights reserved.
+		</footer>
 	</body>
 </html>
 <style is:global>
@@ -34,6 +40,17 @@ const { title } = Astro.props;
 		margin: 0;
 		padding: 0;
 		box-sizing: border-box;
+	}
+
+	body{
+		height: auto;
+		max-width: 100vw;
+	}
+	footer{
+		width: 100%;
+		position: absolute;
+		text-align: center;
+		margin: 4rem 0;
 	}
 
 	html {

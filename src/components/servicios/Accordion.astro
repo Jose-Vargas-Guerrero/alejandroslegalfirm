@@ -1,0 +1,233 @@
+---
+interface Props {
+    number: number;
+    name: string;
+    description: string;
+    open?: string 
+}
+
+const { number,name,description,open} = Astro.props;
+---
+
+<div class="accordionContainer">
+    <div class="accordion">
+        <details {open}>
+            <summary>
+                <span class="number">{number}.</span><span class="name">{name}</span><span class="plus">+</span>
+            </summary>
+            <div class="descripcion">
+                <p class="description">{description}</p>
+            </div>
+        </details>
+    </div>
+</div>
+
+<style>
+    .accordionContainer{
+        width: 50%;
+        border-bottom: 3px solid var(--orange);
+    }
+
+    .accordion{
+        width: 100%;
+        interpolate-size: allow-keyboards;
+    }
+
+    .accordion > details {
+        width: 100%;
+    }
+
+   
+    /* accordion */
+    summary::marker{
+        content: "";
+    }
+
+   
+
+    summary{
+        width: 100%;
+        font-size: 3rem;
+        margin: 1rem 0;
+        font-family: var(--font-family-cormorant);
+        position: relative;
+        cursor: pointer;
+        font-weight: bold;
+        transition: color 0.2s ease;
+    }
+
+    .number{
+        font-family: var(--font-family-inter);
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin: 0 1rem 0 0;
+    }
+
+    .plus{
+        position: absolute;
+        right: 0px;
+    }
+
+    .descripcion{
+        padding: 1.2rem 0;
+    }
+
+    .descripcion > p {
+        font-family: var(--font-family-inter);
+        line-height: 25px;
+        font-size: 1.11rem;
+    }
+
+    summary:hover{
+        color: var(--orange);
+    }
+
+       /* media querys */
+  /* Dispositivos móviles pequeños */
+  @media (max-width: 576px) {
+    .accordionContainer{
+        width: 100%;
+        border-bottom: 3px solid var(--orange);
+    }
+
+    .accordion{
+        width: 100%;
+        interpolate-size: allow-keyboards;
+    }
+
+    .accordion > details {
+        width: 100%;
+    }
+
+   
+    /* accordion */
+    summary{
+        width: 100%;
+        font-size: 1.6rem;
+        margin: 1rem 0;
+        text-align: center;
+    }
+
+    .number{
+        position: absolute;
+        left: 0;
+        font-size: 1.8rem;
+        font-weight: bold;
+        margin: 0 0.5rem 0 0;
+
+    }
+
+    .plus{
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+    }
+
+    .descripcion{
+        padding: 1.2rem 0;
+    }
+
+    .descripcion > p {
+        font-family: var(--font-family-inter);
+        line-height: 25px;
+        font-size: 1rem;
+    }
+  }
+
+    /* Dispositivos móviles grandes (como teléfonos más anchos) */
+    @media (min-width: 577px) and (max-width: 768px) {
+        .accordionContainer{
+        width: 100%;
+        border-bottom: 3px solid var(--orange);
+    }
+
+    .accordion{
+        width: 100%;
+    }
+
+    .accordion > details {
+        width: 100%;
+    }
+
+   
+    /* accordion */
+    summary{
+        width: 100%;
+        font-size: 1.8rem;
+        margin: 1rem 0;
+        text-align: center;
+    }
+
+    .number{
+        position: absolute;
+        left: 0;
+        font-size: 1.8rem;
+        font-weight: bold;
+        margin: 0 0.5rem 0 0;
+
+    }
+
+    .plus{
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+    }
+
+    .descripcion{
+        padding: 1.2rem 0;
+    }
+
+    .descripcion > p {
+        font-family: var(--font-family-inter);
+        line-height: 25px;
+        font-size: 1.1rem;
+    }
+    }
+
+    /* Dispositivos grandes (laptops/desktops) */
+@media (min-width: 769px) and (max-width: 992px) {
+
+    .accordionContainer{
+        padding: 0 1rem;
+        width: 100%;
+    }
+
+    .accordion{
+        width: 100%;
+    }
+
+    .accordion > details {
+        width: 100%;
+    }
+
+   
+    /* accordion */
+    summary{
+        width: 100%;
+        font-size: 2.3rem;
+        margin: 1rem 0;
+    }
+
+    .number{
+        font-size: 2.7rem;
+        font-weight: bold;
+        margin: 0 0.5rem 0 0;
+
+    }
+
+    .plus{
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+    }
+
+    .descripcion{
+        padding: 1.2rem 0;
+    }
+
+    .descripcion > p {
+        line-height: 25px;
+        font-size: 1.2rem;
+    }
+}
+</style>

@@ -1,0 +1,361 @@
+---
+import Layout from "../../layouts/Layout.astro"
+---
+
+<Layout title="Solorzano">
+    <div class="integrantebody">
+        <div class="integrantePanel">
+            <img src="/images/integrante.jpg" class="photo" alt="lRetrato profesional de Marvin Alejandro Solorzano, abogado experto en derecho Mercantil en Alejandros LegalFirm."/>
+            <div class="integrante">
+                <h1>Marvin Alejandro Solorzano</h1>
+                <h2>Master en Derecho Mercantil</h2>
+                <div class="phone">
+                    <h3>Telefono</h3>
+                    <a href="#">(+504) 9537-4265</a>
+                </div>
+                <h3>Áreas de Expertis:</h3>
+                <ul>
+                  <li>Derecho Civil</li>
+                  <li>Derecho Penal</li>
+                  <li>Derecho Mercantil</li>
+                </ul>
+              </div>
+          </div>
+    </div>
+</Layout>
+
+<style>
+
+   .integrantebody{
+    height: 100vh;
+    max-width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .integrantePanel{
+    background-color: var(--orange);
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+   }
+
+   .photo{
+    height: 100%;
+    object-fit: cover;
+   }
+
+   .integrante{
+    height: 100%;
+    width: 60%;
+    padding: 3rem 10rem;
+   }
+
+   .integrante >h1{
+    font-family: var(--font-family-cormorant);
+    font-size: 3.2rem;
+   }
+
+   .integrante >h2{
+    font-family: var(--font-family-cormorant);
+    font-weight: lighter;
+    font-size: 1.8rem;
+   }
+
+   .phone{
+    margin: 1.5rem 0;
+   }
+
+   .phone > h3{
+    font-family: var(--font-family-cormorant);
+    font-size: 1.5rem;
+    font-weight: lighter;
+   }
+
+   .phone > a{
+    font-family: var(--font-family-inter);
+    color: var(--white);
+    text-decoration: none;
+   }
+
+   .integrante > h3{
+    font-family: var(--font-family-cormorant);
+    font-size: 1.5rem;
+    font-weight: lighter;
+   }
+
+   .integrante > ul{
+    color: var(--white);
+    padding: 0 1rem;
+   }
+
+   .integrante > ul >li {
+    font-family: var(--font-family-inter);
+    margin: 5px 0;
+   }
+
+   /* media querys */
+  /* Dispositivos móviles pequeños */
+  @media (max-width: 576px) {
+    .integrantebody{
+    height: 100vh;
+    max-width: 100vw;
+   }
+
+   .integrantePanel{
+    background-color: var(--orange);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .photo{
+    height: 240px;
+   }
+
+   .integrante{
+    height: auto;
+    width: 100%;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .integrante >h1{
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem 0;
+   }
+
+   .integrante >h2{
+    font-weight: lighter;
+    font-size: 1.8rem;
+    text-align: center;
+   }
+
+   .phone{
+    margin: 1.5rem 0;
+    width: 100%;
+    text-align: center;
+   }
+
+   .phone > h3{
+    font-size: 1.5rem;
+    font-weight: lighter;
+   }
+
+   .phone > a{
+    text-decoration: none;
+   }
+
+   .integrante > h3{
+    font-size: 1.5rem;
+    font-weight: lighter;
+   }
+
+   .integrante > ul{
+    width: 100%;
+    text-align: center;
+    list-style: none;
+    padding: 0 1rem;
+   }
+
+   .integrante > ul >li {
+    margin: 5px 0;
+   }
+  }
+
+  /* Dispositivos móviles grandes (como teléfonos más anchos) */
+  @media (min-width: 577px) and (max-width: 768px) {
+    .integrantebody{
+    height: 100vh;
+    max-width: 100vw;
+   }
+
+   .integrantePanel{
+    background-color: var(--orange);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .photo{
+    height: 300px;
+   }
+
+   .integrante{
+    height: auto;
+    width: 100%;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .integrante >h1{
+    font-size: 2.4rem;
+    text-align: center;
+    margin: 1rem 0;
+   }
+
+   .integrante >h2{
+    font-weight: lighter;
+    font-size: 2rem;
+    text-align: center;
+   }
+
+   .phone{
+    margin: 1rem 0;
+    width: 100%;
+    text-align: center;
+   }
+
+   .phone > h3{
+    font-size: 1.6rem;
+    font-weight: lighter;
+   }
+
+   .phone > a{
+    text-decoration: none;
+   }
+
+   .integrante > h3{
+    font-size: 1.5rem;
+    font-weight: lighter;
+   }
+
+   .integrante > ul{
+    width: 100%;
+    text-align: center;
+    list-style: none;
+    padding: 0 1rem;
+   }
+
+   .integrante > ul >li {
+    margin: 5px 0;
+   }
+  }
+
+  /* Dispositivos grandes (laptops/desktops) */
+@media (min-width: 769px) and (max-width: 992px) {
+    .integrantebody{
+    height: 100vh;
+    max-width: 100vw;
+   }
+
+   .integrantePanel{
+    background-color: var(--orange);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .photo{
+    height: 300px;
+   }
+
+   .integrante{
+    height: auto;
+    width: 100%;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .integrante >h1{
+    font-size: 2.4rem;
+    text-align: center;
+    margin: 1rem 0;
+   }
+
+   .integrante >h2{
+    font-weight: lighter;
+    font-size: 2rem;
+    text-align: center;
+   }
+
+   .phone{
+    margin: 1rem 0;
+    width: 100%;
+    text-align: center;
+   }
+
+   .phone > h3{
+    font-size: 1.6rem;
+    font-weight: lighter;
+   }
+
+   .phone > a{
+    text-decoration: none;
+   }
+
+   .integrante > h3{
+    font-size: 1.5rem;
+    font-weight: lighter;
+   }
+
+   .integrante > ul{
+    width: 100%;
+    text-align: center;
+    list-style: none;
+    padding: 0 1rem;
+   }
+
+   .integrante > ul >li {
+    margin: 5px 0;
+   }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+    .integrantebody{
+    height: 100vh;
+    max-width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .integrantePanel{
+    background-color: var(--orange);
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+   }
+
+   .photo{
+    height: 100%;
+   }
+
+   .integrante{
+    height: 100%;
+    width: 100%;
+    padding: 1rem 2rem;
+   }
+}
+   
+</style>
